@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./quiq.css" />
+</head>
+<body>
+    <div class="body-container">        
+        <h1 class="header">Quiq</h1>
+
+        <button type="button" id="toggle-button">Toggle</button>
+
+        <div class="description">
+            <p class="description-part">Welcome to Quiq! You can add new shortcuts below.</p>                               
+        </div>
+
+        <form class="form">
+            <div class="form-part">
+                <div class="shortcut-input">
+                    <div class="exclam-prefix">!</div>
+                    <input class="input" type="text" id="shortcut" placeholder="Shortcut">            
+                </div>                                
+            </div>            
+
+            <div class="form-part">
+                <div class="shortcut-input">
+                    <input class="input" type="text" id="url" placeholder="URL">
+                </div>
+            </div>
+            
+            <button type="button" id="add-button">Add</button>
+        </form>
+
+        <h2 class="sub-header">Quiq Shortcuts</h2>
+
+        <table>
+            <tr>
+                <th>Shortcut</th>
+                <th>URL</th>
+            </tr>            
+        </table>
+    </div>
+    
+    <script src="./quiq.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Quiq",
+    "description": "Quiq is an extension that features highly customisable shortcuts using '!'",
+    "version": "0.1",
+    "permissions": [
+        "webRequest",
+        "storage"
+    ],
+    "host_permissions": [        
+        "https://*.google.com/*"
+      ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "quiq.html"
+    },
+    "commands": {
+        "toggleCommand": {
+            "suggested_key": {
+                "default": "Ctrl+Q",
+                "mac": "Command+Q"
+            },
+            "description": "Toggles extension on/off"
+        }
+    }
+}
