@@ -1,0 +1,2 @@
+# Quiq
+Google Chrome Extension
